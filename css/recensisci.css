@@ -1,0 +1,151 @@
+body{
+	background-image:url('./../immagini/sfondoRegistrazione.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-y: scroll;
+	overflow: hidden;
+}
+
+#_ContenitoreRecensione{
+	width: 500px;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+}
+
+#recensione{
+	width: 100%;
+	padding: 10%;
+	box-sizing: border-box;
+	position: relative;
+	margin-top: 0px;
+	padding-top:0px;
+}
+
+.ContenitoreRecensione{
+	background-color: #a6f2e7;
+	border: solid thin blue;
+	border-radius: 10px;
+	z-index: 15;
+	margin-top: 70px;
+	margin-left: 450px;
+	text-align: center;
+	text-decoration-color: blue;
+}
+
+h2{
+	margin-bottom: 0px;
+	color: blue;
+	font-family: "Open Sans", Helvetica, "Sans Serif";
+ 	font-weight: bold;
+ 	font-size:1.5em;
+ 	margin-bottom: 10px;
+}
+
+.container-valutazione span:first-child{
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	position: relative;
+	justify-content: center;
+}
+
+.valutazione > input{
+	display: none;
+}
+
+/* Set delle stelle come vuote di default */
+.valutazione > input:checked ~ label,
+.valutazione > input:focus ~ label{
+	background: url("./../immagini/StelleRecensione/empty-star.png");
+	background-size: 50px 50px;
+}
+
+/* Set stelle piene se cliccate */
+.valutazione > input:checked + label,
+.valutazione > input:focus + label{
+	background: url("./../immagini/StelleRecensione/filled-star.png");;
+	background-size: 50px 50px;
+}
+
+.valutazione > input:not([disabled]):hover ~ label{
+	background: url("./../immagini/StelleRecensione/empty-star.png");
+	background-size: 50px 50px;
+}
+
+.valutazione > input:not([disabled]):hover + label{
+	background: url("./../immagini/StelleRecensione/filled-star.png");
+	background-size: 50px 50px;
+}
+
+.valutazione > input:not([disabled]):hover + label::before{
+	opacity: 0;
+	background-size: 50px 50px;
+}
+
+.valutazione > label{
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	font-size: 0.1em;
+	color: transparent;
+	cursor: pointer;
+	background-image: url("./../immagini/StelleRecensione/filled-star.png");
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+}
+
+.valutazione > label::before{
+	content: '';
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-image: url("./../immagini/StelleRecensione/filled-star.png");
+	background-size: 50px 50px;
+	pointer-events: none;
+	opacity: 0;
+}
+
+
+.valutazione{
+	display: block;
+	width: 250px;
+	height: 50px;
+	position: relative;
+	padding: 5px;
+}
+
+.container-valutazione{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: auto;
+	min-height: 100%;
+}
+
+textarea.testo-valutazione{
+	min-width: 90%;
+	min-height: 8em;
+	max-width: 12em;
+	max-height: 70%;
+
+	text-align: justify;
+	word-wrap: break-word;
+	font-size: 1.1em;
+
+	margin: auto;
+	margin-bottom: 15px;
+	display: block;
+
+}
+
+.invia{
+	margin-bottom: 0px;
+	width: 100%;
+	background-color: blue;
+	border-radius: 10px;
+	border-color: black;
+}

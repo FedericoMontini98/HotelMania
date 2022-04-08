@@ -1,0 +1,138 @@
+/**************************************/
+/* SEZIONE PAGINA LOCATION.PHP ********/
+/**************************************/
+
+.containerRicerca{
+	display: block;
+	margin-top: 15px;
+}
+
+.risultatiRicerca{
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.hotel{
+	background-color: lightblue;
+	text-align: center;
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-left: 8px;
+	margin: 5px;
+	border: 2px solid blue;
+	border-radius:  10px;
+	display: inline-block;
+	max-width: 500px !important;
+}
+
+.hotel .titolo_Hotel{
+	width: 400px;
+	height: auto;
+}
+
+.hotel-link-img{
+	width: 185px;
+	height: 260px;
+	text-decoration: none;
+}
+
+.hotel-link-img img{
+	width: 300px;
+	height: 200px !important;
+}
+
+.descrizione_Hotel a{
+	text-decoration: none;
+	font-size: 1.4em;
+	font-weight: bolder;
+	color: black;
+
+}
+
+.descrizione_Hotel hr{
+	margin-bottom: 8px;
+	margin-top: 3px;
+	width: 100%;
+}
+
+.descrizione_Hotel .valutazione{
+	width: 100%;
+}
+
+.descrizione_Hotel .valutazione img{
+	width: 25px;
+	height: 25px;
+}
+
+.descrizione_Hotel .valutazione span{
+	font-weight: bold;
+}
+
+.risultatiRicerca .hotel-link-img{
+	text-decoration: none;
+}
+
+#barraRicerca{
+	width: auto;
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+
+#ricerca{
+	width: 1300px;
+	height: 100%;
+	padding: 10px;
+	
+	font-size: 1.2em;
+	text-align: center;
+	
+	border-radius: 10px;
+	border-width: medium;
+	border-color: blue;	
+}
+
+._pulsanti{
+	height:auto;
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+	padding: 20px 0px;
+}
+
+._pulsanti input{
+	background-size: 100% !important;
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	
+	height: 30px;
+	width:30px;
+}
+
+.prec{
+	background-image: url("./../immagini/frecciaSx.png");
+}
+
+.prec:disabled{
+	background-image: url("./../immagini/frecciaSx.png");
+	cursor: default;
+}
+
+.succ{
+	background-image: url("./../immagini/frecciaDx.png");
+}
+
+.succ:disabled{
+	background-image: url("./../immagini/frecciaDx.png");
+	cursor: default;
+}
+
+.N_pagina{
+	font-weight: bolder;
+}

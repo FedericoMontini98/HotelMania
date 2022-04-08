@@ -1,0 +1,344 @@
+/**********************************/
+/**	INTESTAZIONE		 		 **/
+/**********************************/
+header{
+	margin-right: 10px;
+}
+
+#titolo_Header{
+	margin: 2px 2px 2px 2px;
+	width: auto;
+	background-color: blue;
+	z-index:100;
+	top:0;
+	position: sticky;
+	box-shadow: 0px 5px 5px blue;
+	border-bottom:solid thin blue;
+	vertical-align: top;
+}
+.elemento{
+	width: 150px;
+	display:inline-block;
+	margin: 2px 2px 2px 2px;
+	vertical-align: bottom;
+}
+
+#titoloHotelMania{
+ 	font-family: "Open Sans", Helvetica, "Sans Serif";
+ 	font-weight: bold;
+ 	font-size:1.5em;
+ 	color:white;
+ 	align-content: center;
+ 	background-color: inherit;
+ 	text-decoration: none;
+}
+
+.intestazione{
+	height: auto;
+	min-height: 100px !important;
+	min-width: inherit;
+	display:flex;
+	padding: 5px 25px;
+}
+
+#icona{
+	height:120px;
+	width: 110px;
+	vertical-align: middle;
+	margin: 2px 2px 2px 2px;
+	background-image:url('./../immagini/icona.png');
+	position: relative;
+}
+
+body{
+	background-color: #a6f2e7;
+	overflow: hidden;
+}
+
+*:focus, *:active{
+	outline:none !important;
+}
+
+.welcomingContainer{
+	display: inline-block;
+	height: auto;
+	width: inherit;
+	float: right;
+	margin-top: 40px;
+	margin-right: 40px;
+}
+
+.welcoming{
+	float: right;
+	width: auto;
+	max-width: 200px;
+	color: white;
+	position: relative;
+	font-size: 1.2em;
+}
+
+.welcoming p:nth-child(2){
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.welcoming p{
+	margin: 0px;
+}
+
+/**********************************/
+/** Sezione barra di navigazione **/
+/**********************************/
+.barra_navigazione{
+	margin-right: 10px;
+	text-align: center;
+	overflow:hidden;
+	background-color: #7ec6e9;
+	vertical-align: bottom;
+	min-width: inherit;
+
+}
+
+.rightSection{
+	display:inline-block;
+	float: right! important;
+	padding: 10px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	
+}
+
+.leftSection{
+	display: inline-block;
+	float:left;
+	padding: 10px;
+	font-weight: bold;
+	color:black;
+	text-decoration: none;
+}
+
+.leftSection:hover{
+	background-color: #68a3c0;
+	cursor: pointer;
+}
+
+.Login{
+	text-decoration: none;
+}
+
+.nav{
+	text-decoration: none;
+	color: black;
+}
+
+.rightSection:hover{
+	background-color: #68a3c0;
+	cursor: pointer;
+}
+
+#Admin a{
+	color: red;
+	text-decoration: none;
+}
+
+/***********************************/
+/** Sezione di accesso al manuale **/
+/***********************************/
+
+#manualeUtente{
+	text-align: center;
+}
+
+/**********************************/
+/**	Sezione Slideshow	 **/
+/**********************************/
+
+#content{
+	padding: 5px;
+	padding-top: 25px;
+	height: auto;
+	background-color: #a6f2e7;
+	margin-left: 30px;
+	max-width: 1100px;
+	height: 500px;
+	width: 600px;
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+}
+
+.slides img{
+	height: 100%;
+	width: 100%;
+	max-height: inherit;
+	max-width: inherit;
+}
+
+.slideText{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-size: 1.5vw;
+	box-sizing: border-box;
+	left:0;
+	bottom:2px;
+	position: absolute;
+	width: 100%;
+	height: 30%;
+}
+
+.slide-Show{
+	max-width: 600px;
+	max-height: 900px;
+	height: auto;
+	width: auto;
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	overflow: hidden;
+	float:left;
+}
+
+.slides{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	max-width: inherit;
+	max-height:inherit;
+	display: block;
+	position: relative;
+}
+
+@media screen and (max-width: 1000px){
+	.slideText{
+		font-size: 1.7em;
+	}
+}
+
+/* Rimuovo la sovrapposizione delle due immagini nello slider*/
+.slides + .slides{
+	display: none;
+}
+
+/* Metto in posizione i bottoni */
+
+.displayLeft{
+	left: 0%;
+}
+
+.displayRight{
+	right: 0%;
+}
+
+.SlidePrevious,.SlideNext{
+	overflow: hidden;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	text-decoration: none;
+	text-transform: none;
+	text-align: center;
+	transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+}
+
+.SlideNext:hover,.SlidePrevious:hover{
+	color:white;
+	background-color: #ccc;
+}
+
+#offerteText{
+	color: red;
+	display: inline-block;
+	justify-content: left;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: 15px;
+	text-align: left;
+	font-size: 1.7vw;
+	box-sizing: border-box;
+	top: 25px;
+	position: relative;
+	width: 45%;
+	height: 60%;
+	float: right;
+	margin-right: 60px;
+}
+
+/*************************************************/
+/**** Dashboard Recensioni ***********************/
+/*************************************************/
+
+.contenitore{
+	background-color: lightblue;
+	margin: 15px;
+	overflow:hidden;
+	text-align: center;
+	height: inherit;
+	width: 1300px;
+	border: 2px solid blue;
+	border-radius: 8px;
+}
+
+
+.titolo{
+	margin-top: 10px;
+	color: blue;
+}
+
+.bestLocation{
+	display: flex;
+	justify-content: space-between;
+}
+
+.homeHotel{
+	display: block;
+	padding: 8px;
+	padding-bottom: 2px;
+	margin: 10px;
+	font-size: 1.5em;
+	width: 30%;
+
+}
+
+.homeHotel .link-Immagine-Hotel{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.homeHotel p{
+	width: 100%;
+}
+.ranking{
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+.link-Immagine-Hotel img{
+	width: 395px;
+	height: 200px !important;
+}
+
+.info{
+	margin-bottom: 3px;
+}
+
+/*General*/
+html{
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+}

@@ -1,0 +1,157 @@
+/*********************************************************/
+/********** MAIN PAGE ADMIN SECTION **********************/
+/*********************************************************/
+.navigaSezioneAdmin{
+	border: solid black thin;
+	border-radius: 8px;
+	background-color: lightblue;
+	margin-top: 60px;
+	width: 60%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navigaSezioneAdmin h2{
+	text-align: center;
+	color: blue;
+}
+
+.navigaSezioneAdmin a{
+	font-size: 1.4em;
+	display: flex;
+	justify-content: center;
+}
+
+ul{
+	justify-content: center;
+	text-align: center;
+	margin-top: 10px;
+}
+
+li{
+	display:table;
+    margin:10px auto 10px auto;
+}
+
+/*********************************************************/
+/********** INSERISCI HOTEL ADMIN ************************/
+/*********************************************************/
+
+.InserisciHotel{
+	border: solid black thin;
+	border-radius: 8px;
+	margin-top: 60px;
+	width: 60%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightblue;
+}
+
+.InserisciHotel hr{
+	margin-bottom: 20px;
+}
+
+.InserisciHotel h2{
+	color: blue;
+}
+
+.InserisciHotel div{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding-bottom: 5px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.InserisciHotel div:hover{
+	color: blue;
+}
+
+.InserisciHotel textarea{
+	width: 450px;
+	height: 130px;
+}
+
+.inserisci{
+	margin: auto;
+	margin-top: 20px;
+	text-align: center;
+	width: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding-bottom: 5px;
+	padding-left: 340px;
+	margin-bottom: 10px;
+}
+
+.inserisci input[type="submit"]{
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	border: solid 0px;
+	border-radius: 8px;
+	padding: 5px 10px;
+	width: 100px;
+}
+
+/*********************************************************/
+/********** INSERISCI IMMAGINE ***************************/
+/*********************************************************/
+
+.InserisciHotel div{
+	text-align: center;
+	padding-bottom: 8px;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+
+/*********************************************************/
+/************** AGGIUNGI ADMIN ***************************/
+/*********************************************************/
+
+#ModAdmin{
+	background-color: lightblue;
+	text-align: center;
+	width: 60%;
+	margin-top: 10px;
+	padding: 5px; 
+}
+
+#ModAdmin hr{
+	margin-bottom: 20px;
+}
+
+#ModAdmin label{
+	font-size: 1.2em;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.erroreDigitazione{
+	height: 20px;
+	left: 850px;
+	width: auto;
+	padding: 0px 3px;
+
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	visibility: hidden;
+
+	background-color: red;
+	border: solid red thin;
+	border-radius: 3px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.Password, .Email{
+	display: flex;
+	margin-bottom: 15px;
+}

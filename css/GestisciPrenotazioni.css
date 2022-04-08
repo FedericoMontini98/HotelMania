@@ -1,0 +1,84 @@
+/* CONTENITORE FORM */
+.contenitore-ModifyForm{
+	background-color: lightblue;
+	border: solid thin blue;
+	border-radius: 10px;
+	z-index: 15;
+	margin-top: 70px;
+	margin-left: 50px;
+	text-align: center;
+	text-decoration-color: blue;
+}
+
+p.c {
+	margin-bottom: 0px;
+	color: blue;
+	font-family: "Open Sans", Helvetica, "Sans Serif";
+ 	font-weight: bold;
+ 	font-size:1.5em;
+}
+
+#contenitore_ModifyForm{
+	width: 1200px;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+}
+
+/* FORM */
+
+#ModifyForm{
+	width: 100%;
+	padding: 10%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.registro{
+	display: flex;
+	height: 30px;
+	align-items: center;
+	justify-content: space-between;	
+	position: relative;
+	font-size: 1.1em;
+	font-family: "Open Sans", Helvetica, "Sans Serif";
+ 	font-weight: bold;
+}
+
+.erroreDigitazione{
+	visibility: hidden;
+	position: absolute;	
+}
+
+.pulsanteRegistrati{
+	display: flex;
+	margin: 5px;
+	align-items: center;
+	justify-content: center;
+}
+
+.registrati_button{
+	height: 30px;
+	background-color: blue;
+	margin-top: 50px;
+	margin-left:300px;
+	font-weight: bold;
+	font-size: 1em;
+	color: white;
+	align-self: center;
+	justify-content: center;
+}
+
+.registrati_button{
+	cursor: pointer;
+	align-self: center;
+	justify-content: center;
+}
+
+span{
+	font-size: 1.4em;
+	font-weight: bolder;
+	color: black;
+	justify-content: space-between;
+	margin:15px;
+}

@@ -1,0 +1,132 @@
+/**********************************/
+/**	INTESTAZIONE		 		 **/
+/**********************************/
+#titolo_Header{
+	margin: 2px 2px 2px 2px;
+	width: auto;
+	background-color: blue;
+	z-index:100;
+	top:0;
+	position: sticky;
+	box-shadow: 0px 5px 5px blue;
+	border-bottom:solid thin blue;
+	vertical-align: top;
+}
+.elemento{
+	width: 150px;
+	display:inline-block;
+	margin: 2px 2px 2px 2px;
+	vertical-align: bottom;
+}
+
+#titoloHotelMania{
+ 	font-family: "Open Sans", Helvetica, "Sans Serif";
+ 	font-weight: bold;
+ 	font-size:1.5em;
+ 	color:white;
+ 	align-content: center;
+ 	background-color: inherit;
+}
+
+.intestazione{
+	height: auto;
+	min-height: 100px !important;
+	min-width: inherit;
+	display:flex;
+	padding: 5px 25px;
+
+}
+
+#icona{
+	height:120px;
+	width: 110px;
+	vertical-align: middle;
+	margin: 2px 2px 2px 2px;
+	background-image:url('./../immagini/icona.png');
+	position: relative;
+}
+
+body{
+	background-image:url('./../immagini/sfondoRegistrazione.jpg');
+	overflow-y: scroll;
+	background-repeat: no-repeat;
+}
+
+/************************************************/
+/** FORM DI INSERIMENTO DATI ACCESSO ************/
+/************************************************/
+
+.contenitore-SignInForm{
+	background-color: #a6f2e7;
+	border: solid thin blue;
+	border-radius: 10px;
+	z-index: 15;
+	margin-top: 150px;
+	margin-left: 500px;
+	text-align: center;
+	text-decoration-color: blue;
+}
+
+p {
+	margin-bottom: 0px;
+	color: blue;
+	font-family: "Open Sans", Helvetica, "Sans Serif";
+ 	font-weight: bold;
+ 	font-size:1.5em;
+}
+
+#contenitore_SignInForm{
+	width: 400px;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+}
+
+/* FORM */
+
+#signInForm{
+	width: 100%;
+	padding: 10%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.registro{
+	display: flex;
+	height: 30px;
+	align-items: center;
+	justify-content: space-between;	
+	position: relative;
+	font-size: 1.1em;
+	font-family: "Open Sans", Helvetica, "Sans Serif";
+ 	font-weight: bold;
+}
+
+.pulsanteLogIn{
+	display: flex;
+	margin: 5px;
+	align-items: center;
+	justify-content: center;
+}
+
+.login_Button{
+	height: 30px;
+	background-color: blue;
+	font-weight: bold;
+	font-size: 1em;
+	color: white;
+	align-self: center;
+}
+
+.login_Button:hover{
+	cursor: pointer;
+	background-color: #68a3c0
+}
+
+.ref_reg{
+	display: block;
+	padding-bottom: 5px;
+	color: blue;
+	text-align: center;
+	text-decoration: none;
+}
